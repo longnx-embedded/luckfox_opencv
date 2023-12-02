@@ -16,7 +16,7 @@ enable_testing()
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/rockit/include)
 link_directories(${ROCKIT})
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/sample)
-add_executable(opencv_rkisp main.cpp sample/loadbmp.c sample/sample_comm.c)
+add_executable(opencv_rkisp main.cpp sample/loadbmp.c sample/sample_comm.c sample/rkvio.cpp)
 
 target_link_libraries(opencv_rkisp ${OpenCV_LIBS})
 
